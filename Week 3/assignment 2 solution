@@ -1,0 +1,24 @@
+def main():
+    earth_weight_str = float(input("Enter a weight on Earth:"))
+    planet = input("Enter a planet:")
+    if planet == "Mercury":
+        gravity_constant = 0.376
+    elif planet == "Venus":
+        gravity_constant = 0.889   
+    elif planet == "Mars":
+        gravity_constant =  0.378
+    elif planet == "Jupiter":
+        gravity_constant =  2.360
+
+    elif planet == "Saturn":
+        gravity_constant =  1.081
+
+    elif planet == "Uranus":
+        gravity_constant = 0.815
+    else:
+        gravity_constant = 1.140
+    calculated_weight = gravity_constant * earth_weight_str
+    rounded_weight = round(calculated_weight ,2)
+    print(f"The equivalent weight on {planet}: {rounded_weight}") 
+if __name__ == "__main__":
+    main()
